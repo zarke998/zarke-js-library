@@ -1,0 +1,47 @@
+/* ANIMAITON CLASSES */
+
+/*DROP DOWN MENU */
+.li-base{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+}
+.dropDown{
+    animation-name: dropDownAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes dropDownAnimation{
+    0%{
+        opacity: 0;
+        top: -60px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+@keyframes dropUpAnimation{
+    0%{
+        opacity: 1;
+        top: 0px;
+    }
+    100%{
+        opacity: 0;
+        top: -60px;
+    }
+}
+.dropUp{
+    animation-name: dropUpAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/* PROPERTY CLASSES */
+.d-none{
+    display: none !important;
+}
+.d-flex{
+    display: flex !important;
+}
